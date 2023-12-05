@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <title>تطبيق المذكرة</title>
+        <script src="note.js"></script>
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="note.css">
+    </head>
+
+    <body>
+        <h3>إضافة مذكرة</h3>
+        <div id="div-add">
+            <form>
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="content">المحتوى</label>
+                    <textarea rows="4" cols="50" class="form-control" id="content"></textarea>
+                </div>                
+                <button id="add" class="btn btn-primary" type="button">إضافة</button>
+            </form>
+        </div>
+        <div id="div-list">
+            <h3>مشاهدة/تعديل</h3>
+            <ul id="list">
+
+            </ul>
+        </div>
+        <div id="div-edit" class="hide">
+            <form>
+                <div class="form-group">
+                    <label for="edit-name">الاسم</label>
+                    <input type="text" class="form-control" id="edit-name"/>
+                </div>
+                <div class="form-group">
+                    <label for=" edit-content">المحتوى</label>
+                    <textarea rows="4" cols="50" class="form-control" id="edit-content"></textarea>    
+                </div>
+                <button id="save" class="btn btn-primary" type="button">حفظ</button>
+                <button id="remove" class="btn btn-danger" type="button">حذف</button>
+                <button id="cancel" class="btn btn-default" type="button">إلغاء</button>
+            </form>
+        </div>
+    </body>
+</html>
